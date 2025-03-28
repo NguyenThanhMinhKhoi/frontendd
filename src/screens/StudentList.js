@@ -16,7 +16,7 @@ const StudentList = ({ navigation }) => {
 
   const handleDelete = async (id) => {
     await deleteStudent(id);
-    fetchStudents(); // Reload danh sách sau khi xóa
+    fetchStudents(); 
   };
 
   return (

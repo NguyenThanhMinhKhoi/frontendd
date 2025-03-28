@@ -21,7 +21,7 @@ const AddStudent = ({ navigation }) => {
             let data = await response.json();
             if (response.ok) {
                 Alert.alert('Thành công', 'Đã thêm sinh viên');
-                navigation.goBack(); // Quay lại màn hình trước
+                navigation.goBack(); 
             } else {
                 Alert.alert('Lỗi', data.error);
             }

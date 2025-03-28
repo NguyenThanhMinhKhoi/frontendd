@@ -13,7 +13,7 @@ export const getStudents = async () => {
   }
 };
 
-// Thêm sinh viên
+
 export const addStudent = async (student) => {
   try {
     const response = await axios.post(API_URL, student);
@@ -23,7 +23,7 @@ export const addStudent = async (student) => {
   }
 };
 
-// Cập nhật sinh viên
+
 export const updateStudent = async (id, student) => {
   try {
     const response = await axios.put(`${API_URL}/${id}`, student);
@@ -33,7 +33,6 @@ export const updateStudent = async (id, student) => {
   }
 };
 
-// Xóa sinh viên
 export const deleteStudent = async (id) => {
   try {
     await axios.delete(`${API_URL}/${id}`);
